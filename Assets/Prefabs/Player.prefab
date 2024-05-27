@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 8656077635129187268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68,5 +68,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterPrefabs:
   - {fileID: 7244497919580167598, guid: 9702e183d19e10e409a9ba04f377a367, type: 3}
-  - {fileID: 224086429757002442, guid: ed3de587b0006fd4cb49ae8bee9dd7e8, type: 3}
+  - {fileID: 4888795753781325567, guid: ed3de587b0006fd4cb49ae8bee9dd7e8, type: 3}
   spawnPoint: {fileID: 253165063578825512}

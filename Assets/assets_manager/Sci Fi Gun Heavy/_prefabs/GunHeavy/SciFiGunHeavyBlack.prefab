@@ -105,7 +105,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1974555051
+  GlobalObjectIdHash: 3666793489
   InScenePlacedSourceGlobalObjectIdHash: 1974555051
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -145,24 +145,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 20
   timeBetweenShooting: 0.1
-  spread: 0
-  range: 10
-  reloadTime: 1
-  timeBetweenShots: 0.08
   magazineSize: 100
-  bulletsPerTap: 1
+  reloadTime: 1
   allowButtonHold: 1
   fpsCam: {fileID: 0}
   attackPoint: {fileID: 4306750738750476277}
-  whatIsEnemy:
-    serializedVersion: 2
-    m_Bits: 64
-  whatIsRig:
-    serializedVersion: 2
-    m_Bits: 64
-  bulletHoleGraphicEnemy: {fileID: 108886, guid: df804c49be2c3cf4a90d773eb9565e13, type: 3}
-  bulletHoleGraphicRig: {fileID: 166328, guid: 4687dbac65c37124e833c08251864ba7, type: 3}
-  muzzleFlash: {fileID: 138408, guid: a66d64962dad7b441b895147b3616981, type: 3}
   bulletPrefab: {fileID: 980599525646581897, guid: f4aae0c8f6b73bc43b5095123f276f62, type: 3}
   ammoText: {fileID: 0}
   outOfAmmoText: {fileID: 0}
@@ -179,8 +166,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupButton: {fileID: 0}
-  weaponPrefab: {fileID: 0}
-  meshCollider: {fileID: 0}
+  weaponPrefab: {fileID: 197730}
+  meshCollider: {fileID: 8214703937053582221}
 --- !u!1 &4176077759328844387
 GameObject:
   m_ObjectHideFlags: 0
