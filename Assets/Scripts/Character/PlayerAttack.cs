@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class PlayerAttack : NetworkBehaviour
 {
+    public GameObject weapon;
+    public GameObject gun;
+    private bool isCanSung;
     public override void OnNetworkSpawn()
     {
         if (!IsOwner)
@@ -25,9 +28,34 @@ public class PlayerAttack : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        if (isCanSung)
         {
-            amin.SetTrigger("slash");
+            amin.SetBool("isGun", true);
+        }
+        else
+        {
+            amin.SetBool("isGun", false);
+            if (Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                amin.SetTrigger("slash");
+            }
+        }
+
+       
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Weapon"))
+        {
+            weapon.SetActive(true);
+            gun.SetActive(false);
+            isCanSung = false;
+        }
+        else
+        {
+            weapon.SetActive(false );
+            gun.SetActive(true);
+            isCanSung = true;
         }
     }
 }
